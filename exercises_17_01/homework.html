@@ -10,11 +10,11 @@
 <body>
     <h2 id="demo">Vui lòng điển thông tin sau</h2>
     <label for="email">Email:</label>
-    <input type="text" id="email" name="email" oninput="Email()">
+    <input type="text" id="email" name="email" onkeyup="Email()">
     <span id="emailError" style="color: red;"></span>
     <br>
     <label for="password">Password:</label>
-    <input type="password" id="password" name="password" oninput="Password()">
+    <input type="password" id="password" name="password" onkeyup="Password()">
     <span id="passwordError" style="color: red;"></span>
     <br>
     <input type="submit" value="Submit" onclick="return validateForm()">
