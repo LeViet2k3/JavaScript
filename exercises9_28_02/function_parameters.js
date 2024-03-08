@@ -18,8 +18,8 @@ func1(1, 2, 3)
 
 var person1 = { name: 'Van Viet', age: 19 };
 var person2 = { name: 'Le Viet', age: 20 };
-var sayHello = function () { alert('Hello, ' + this.name); };
-var sayGoodbye = function () { alert('Goodbye, ' + this.name); };
+var sayHello = function () { console.log('Hello, ' + this.name); };
+var sayGoodbye = function () { console.log('Goodbye, ' + this.name); };
 
 sayHello();
 sayGoodbye();
