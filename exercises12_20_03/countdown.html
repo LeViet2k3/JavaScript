@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        #countdown {
+            font-size: 5em;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="countdown">10</div>
+
+    <script>
+        var countdownElement = document.getElementById("countdown");
+        var time = 10;
+        countdownElement.textContent = time;
+
+        function countdown() {
+            time--;
+
+            countdownElement.textContent = time;
+
+            // Nếu đã hết thời gian, dừng đồng hồ đếm ngược
+            if (time <= 0) {
+                clearInterval(timer);
+                countdownElement.textContent = "Time's up!";
+            }
+        }
+
+        // Gọi hàm countdown mỗi giây
+        var timer = setInterval(countdown, 1000);
+    </script>
+</body>
+
+</html>
